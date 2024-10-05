@@ -1,13 +1,28 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #001F3F; /* Dark navy blue background */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.color-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center align the boxes */
+  margin: 20px; /* Add some margin */
+}
+
+.color {
+  width: 100px; /* Width of each box */
+  height: 100px; /* Height of each box */
+  margin: 10px; /* Margin between boxes */
+  border-radius: 15px; /* Rounded corners */
+  display: flex; /* Flexbox to center text */
+  align-items: center; /* Center align items vertically */
+  justify-content: center; /* Center align items horizontally */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.2s; /* Animation effect */
+}
+
+.color:hover {
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
 }
